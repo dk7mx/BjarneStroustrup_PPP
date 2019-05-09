@@ -7,7 +7,7 @@
 * myComment:
 * The code is different from others on the web in that way that it uses a
 * while-loop instead a for-loop. Thereby the code became shorter and with less
-* cases to distinguish.
+* different cases.
 *
 *******************************************************************************/
 
@@ -15,7 +15,7 @@
 
 char* findx(const char* s, const char* x){
 
-    // create a non-const-copy to match the return-type
+    // create a non-const-copy to match the requirements for the return-type
     char* swx = const_cast<char*>(s);
 
     // check for content
