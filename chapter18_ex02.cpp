@@ -30,7 +30,7 @@ char* findx(const char* s, const char* x){
 
 	// run through 2 loops
 	for (int i=0; *(s+i); ++i){					                        // outer loop, run through s
-		if (*(s+i) == *x){												// first occurence of identical chars
+		if (*(s+i) == *x){								// first occurence of identical chars
                                                                 
 			int j = 0;
 			while (*(s+i+j) == *(x+j)){			                        // inner loop, compare s and x
