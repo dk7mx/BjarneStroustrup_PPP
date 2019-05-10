@@ -11,8 +11,28 @@
 *
 *******************************************************************************/
 
-#include "std_lib_facilities.h"
+/*******************************************************************************
+* latest changes: 20190510
+* changed by: dk7mx
+*
+*	- std_lib_facilities.h removed
+*   - error() added
+*
+*
+*******************************************************************************/
 
+#include <iostream>
+
+using namespace std;
+
+//------------------------------------------------------------------------------
+
+// Helper function to show an error message
+inline void error(const string& errormessage){
+	throw runtime_error(errormessage);
+}
+
+//------------------------------------------------------------------------------
 char* findx(const char* s, const char* x){
 
     // create a non-const-copy to match the requirements for the return-type
@@ -31,7 +51,7 @@ char* findx(const char* s, const char* x){
 	// run through 2 loops
 	for (int i=0; *(s+i); ++i){					                        // outer loop, run through s
 		if (*(s+i) == *x){								// first occurence of identical chars
-                                                                
+
 			int j = 0;
 			while (*(s+i+j) == *(x+j)){			                        // inner loop, compare s and x
 				++j;
