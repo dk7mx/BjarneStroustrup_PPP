@@ -1,2 +1,4 @@
 
 chapter18_ex02.o
+*.exe
+*.o
