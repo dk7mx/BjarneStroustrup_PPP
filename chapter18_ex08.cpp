@@ -88,7 +88,7 @@ try {
 	}
 
 	// test array
-	const int max = 128;
+	const int max = 5;
 	char s2[max];
 	while (read_word(cin,s2,max) && strcmp(s2,"quit")) {
 		cout << s2 << " is";
